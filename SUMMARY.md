@@ -4,4 +4,6 @@ The dataset consists of 261 images with 2478 labeled objects belonging to 25 dif
 
 Images in the Semantic-segmentation-Satellite-Imagery dataset have pixel-level semantic segmentation annotations. Due to the nature of the semantic segmentation task, it can be automatically transformed into an object detection (bounding boxes for every object) task. All images are labeled (i.e. with annotations). There is 1 split in the dataset: *ds0* (261 images). The dataset was released in 2022.
 
-<img src="https://github.com/dataset-ninja/semantic-segmentation-satellite-imagery/raw/main/visualizations/poster.png">
+Here is the visualized example grid with annotations:
+
+<img src="https://github.com/dataset-ninja/semantic-segmentation-satellite-imagery/raw/main/visualizations/side_annotations_grid.png">
