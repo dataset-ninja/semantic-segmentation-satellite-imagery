@@ -29,7 +29,10 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/semantic-segmentation-satell
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
+    "train_masks.zip": "https://figshare.com/ndownloader/articles/19961426/versions/1",
+    "train_images.zip": "https://figshare.com/ndownloader/articles/19961336/versions/1"
+}
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
