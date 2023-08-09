@@ -1,6 +1,6 @@
 If you make use of the Semantic-segmentation-Satellite-Imagery data, please cite the following reference:
 
-``` bibtex
+```bibtex
 @misc{
     alchimowicz_2022,
     title={semantic_segmentation_satellite_imagery}, 
@@ -14,4 +14,4 @@ If you make use of the Semantic-segmentation-Satellite-Imagery data, please cite
 }
 ```
 
-[🔗 Source](https://doi.org/10.6084/m9.figshare.c.6026765.v1)
+[Source](https://doi.org/10.6084/m9.figshare.c.6026765.v1)

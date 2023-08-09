@@ -1,6 +1,14 @@
 from typing import Dict, List, Optional, Union
 
-from dataset_tools.templates import AnnotationType, CVTask, Industry, Domain, Research, License, Category
+from dataset_tools.templates import (
+    AnnotationType,
+    Category,
+    CVTask,
+    Domain,
+    Industry,
+    License,
+    Research,
+)
 
 ##################################
 # * Before uploading to instance #
@@ -16,16 +24,20 @@ APPLICATIONS: List[Union[Industry, Domain, Research]] = [
     Industry.SearchAndRescue(is_used=False),
     Industry.Environmental(is_used=False),
 ]
-CATEGORY: Category = Category.Aerial(extra=[Category.Safety(), Category.Environmental()])
+CATEGORY: Category = Category.Aerial(
+    extra=[Category.Safety(), Category.Environmental(), Category.Satellite()]
+)
 
-CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2022-06-02"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = "https://github.com/JenAlchimowicz/Semantic-segmentation-with-PyTorch-Satellite-Imagery"
+HOMEPAGE_URL: str = (
+    "https://github.com/JenAlchimowicz/Semantic-segmentation-with-PyTorch-Satellite-Imagery"
+)
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 861154
@@ -39,7 +51,7 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/semantic-segmentation-satell
 ##################################
 DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
     "train_masks.zip": "https://figshare.com/ndownloader/articles/19961426/versions/1",
-    "train_images.zip": "https://figshare.com/ndownloader/articles/19961336/versions/1"
+    "train_images.zip": "https://figshare.com/ndownloader/articles/19961336/versions/1",
 }
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
@@ -65,7 +77,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
     "Parking Area - Commercial": [0, 0, 128],
     "Sports Complex / Arena": [128, 128, 128],
     "Industrial Site": [230, 25, 75],
-    "Dense Vegetation / Forest": [60, 180, 75],
+    "Dense Vegetation / Forest": [255, 20, 147],
     "Water Body": [255, 225, 25],
     "Flooded": [0, 130, 200],
     "Boat": [245, 130, 48],
