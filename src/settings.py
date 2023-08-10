@@ -21,6 +21,7 @@ PROJECT_NAME_FULL: str = "Semantic Segmentation with PyTorch Satellite Imagery"
 ##################################
 LICENSE: License = License.CC_BY_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Domain.Geospatial(),
     Industry.SearchAndRescue(is_used=False),
     Industry.Environmental(is_used=False),
 ]
