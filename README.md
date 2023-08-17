@@ -1,3 +1,3 @@
-# Semantic-segmentation-with-PyTorch-Satellite-Imagery
+# Semantic Segmentation with PyTorch Satellite Imagery
 
-Semantic-segmentation-Satellite-Imagery is a dataset for semantic segmentation, instance segmentation tasks.
+Semantic Segmentation Satellite Imagery is a dataset for semantic segmentation tasks.
