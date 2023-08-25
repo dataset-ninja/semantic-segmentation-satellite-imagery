@@ -5,7 +5,7 @@
 # * Preview class to visualize in SUMMARY.md overview section
 # * Literal["ClassesPreview", "HorizontalGrid", "SideAnnotationsGrid", "Poster"]
 # * If None, then preview_class will be set automatically to "ClassesPreview"
-PREVIEW_CLASS = "HorizontalGridAnimated"
+PREVIEW_CLASS = "ClassesPreview"
 
 IS_DETECTION_TASK: bool = None  # ? Set True if you want to visualize only bbox annotations
 
