@@ -1,6 +1,6 @@
 Dataset **Semantic Segmentation Satellite Imagery** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/G/J/Zv/jPElceoVH1Wavaa8AR2SIrKPDg1XZrvwaJnzzqd8XF8q8FVWApLbdGK43rdUskrtu6iwxfC1uCYzvOVWcNm2QgDM0XpRtjTiiYf0OiPic7AjhVROsbdZ2sgf03Gr.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/k/5/M4/9xP98aAoU1rrBRnbku4oXJM3F2zuAtlKOk9NxtDbWhaqEsSCVJvfWjjQmK1TaO7LAgO3TG95i6m0b4eF1mbM2SDLtczRA5PBnTEVkv8qjAVZB70jOqfJiAFSccj0.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
