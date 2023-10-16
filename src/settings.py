@@ -20,7 +20,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_4_0()
+LICENSE: License = License.CC_BY_4_0(source_url="https://figshare.com/articles/dataset/train_images_jpg/19961336?backTo=/collections/semantic_segmentation_satellite_imagery/6026765")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
     Domain.Geospatial(),
     Industry.SearchAndRescue(is_used=False),
@@ -37,9 +37,8 @@ RELEASE_DATE: Optional[str] = "2022-06-02"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = (
-    "https://github.com/JenAlchimowicz/Semantic-segmentation-with-PyTorch-Satellite-Imagery"
-)
+HOMEPAGE_URL: str = "https://figshare.com/collections/_/6026765"
+    
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 861154
@@ -86,7 +85,10 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = "https://github.com/JenAlchimowicz/Semantic-segmentation-with-PyTorch-Satellite-Imagery"
+
 CITATION_URL: Optional[str] = "https://doi.org/10.6084/m9.figshare.c.6026765.v1"
 AUTHORS: Optional[List[str]] = ["Jedrzej Alchimowicz"]
 
@@ -134,6 +136,8 @@ def get_settings():
     settings["download_original_url"] = DOWNLOAD_ORIGINAL_URL
     settings["class2color"] = CLASS2COLOR
     settings["paper"] = PAPER
+    settings["blog"] = BLOGPOST
+    settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
     settings["organization_name"] = ORGANIZATION_NAME
