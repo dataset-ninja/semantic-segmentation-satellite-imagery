@@ -70,7 +70,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
     "window": [0, 128, 128],
     "satellite antenna": [220, 190, 255],
     "garbage bins": [170, 110, 40],
-    "trampoline": [255, 250, 200],s
+    "trampoline": [255, 250, 200],
     "road / highway": [128, 0, 0],
     "under construction / in progress status": [170, 255, 195],
     "power lines & cables": [128, 128, 0],
