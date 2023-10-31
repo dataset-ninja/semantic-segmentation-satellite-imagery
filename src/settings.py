@@ -57,40 +57,43 @@ DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = {
-    "Background": [230, 25, 75],
-    "Property Roof": [60, 180, 75],
-    "Secondary Structure": [255, 225, 25],
-    "Swimming Pool": [0, 130, 200],
-    "Vehicle": [245, 130, 48],
-    "Grass": [145, 30, 180],
-    "Trees / Shrubs": [70, 240, 240],
-    "Solar Panels": [240, 50, 230],
-    "Chimney": [210, 245, 60],
-    "Street Light": [250, 190, 212],
-    "Window": [0, 128, 128],
-    "Satellite Antenna": [220, 190, 255],
-    "Garbage Bins": [170, 110, 40],
-    "Trampoline": [255, 250, 200],
-    "Road/Highway": [128, 0, 0],
-    "Under Construction / In Progress Status": [170, 255, 195],
-    "Power Lines & Cables": [128, 128, 0],
-    "Water Tank / Oil Tank": [255, 215, 180],
-    "Parking Area - Commercial": [0, 0, 128],
-    "Sports Complex / Arena": [128, 128, 128],
-    "Industrial Site": [230, 25, 75],
-    "Dense Vegetation / Forest": [255, 20, 147],
-    "Water Body": [255, 225, 25],
-    "Flooded": [0, 130, 200],
-    "Boat": [245, 130, 48],
+    "background": [230, 25, 75],
+    "property roof": [60, 180, 75],
+    "secondary structure": [255, 225, 25],
+    "swimming pool": [0, 130, 200],
+    "vehicle": [245, 130, 48],
+    "grass": [145, 30, 180],
+    "trees / shrubs": [70, 240, 240],
+    "solar panels": [240, 50, 230],
+    "chimney": [210, 245, 60],
+    "street light": [250, 190, 212],
+    "window": [0, 128, 128],
+    "satellite antenna": [220, 190, 255],
+    "garbage bins": [170, 110, 40],
+    "trampoline": [255, 250, 200],s
+    "road / highway": [128, 0, 0],
+    "under construction / in progress status": [170, 255, 195],
+    "power lines & cables": [128, 128, 0],
+    "water tank / oil tank": [255, 215, 180],
+    "parking area - commercial": [0, 0, 128],
+    "sports complex / arena": [128, 128, 128],
+    "industrial site": [230, 25, 75],
+    "dense vegetation / forest": [255, 20, 147],
+    "water body": [255, 225, 25],
+    "flooded": [0, 130, 200],
+    "boat": [245, 130, 48],
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https://github.com/JenAlchimowicz/Semantic-segmentation-with-PyTorch-Satellite-Imagery"}
+
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = "https://github.com/JenAlchimowicz/Semantic-segmentation-with-PyTorch-Satellite-Imagery"
 
 CITATION_URL: Optional[str] = "https://doi.org/10.6084/m9.figshare.c.6026765.v1"
-AUTHORS: Optional[List[str]] = ["Jedrzej Alchimowicz"]
+AUTHORS: Optional[List[str]] = None
+AUTHORS_CONTACTS: Optional[List[str]] = None
+
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
@@ -140,6 +143,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
